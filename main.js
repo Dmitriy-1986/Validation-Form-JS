@@ -13,9 +13,9 @@ let username = id("username"),
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  engine(username, 0, "Username cannot be blank");
-  engine(email, 1, "Email cannot be blank");
-  engine(password, 2, "Password cannot be blank");
+  engine(username, 0, "Имя пользователя не может быть пустым"); //Username cannot be blank
+  engine(email, 1, "Адрес электронной почты не может быть пустым"); //Email cannot be blank
+  engine(password, 2, "Пароль не может быть пустым"); //Password cannot be blank
 });
 
 let engine = (id, serial, message) => {
